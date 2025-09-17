@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEdit - Simple Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="toolbar">
+            <div class="toolbar-group">
+                <button id="newBtn" title="New File">New</button>
+                <button id="openBtn" title="Open File">Open</button>
+                <button id="saveBtn" title="Save File">Save</button>
+            </div>
+            <div class="toolbar-group">
+                <button id="undoBtn" title="Undo">Undo</button>
+                <button id="redoBtn" title="Redo">Redo</button>
+            </div>
+            <div class="toolbar-group">
+                <button id="copyBtn" title="Copy">Copy</button>
+                <button id="pasteBtn" title="Paste">Paste</button>
+            </div>
+        </header>
+        
+        <main class="editor-container">
+            <textarea id="editor" placeholder="Start typing..."></textarea>
+        </main>
+        
+        <footer class="status-bar">
+            <span id="status">Ready</span>
+            <span id="position">Line 1, Column 1</span>
+        </footer>
+    </div>
+    
+    <input type="file" id="fileInput" accept=".txt,.md,.js,.html,.css,.json" style="display: none;">
+    
+    <script src="script.js"></script>
+</body>
+</html>
